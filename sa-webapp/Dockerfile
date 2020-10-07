@@ -3,4 +3,4 @@ FROM openjdk:8-jdk-alpine
 ENV SA_LOGIC_API_URL http://localhost:5000
 ADD target/sentiment-analysis-web-0.0.1-SNAPSHOT.jar /
 EXPOSE 8090
-CMD [ "sh", "-c", "java -jar sentiment-analysis-web-0.0.1-SNAPSHOT.jar --sa.logic.api.url=${SA_LOGIC_API_URL}" ]
+CMD [ "sh", "-c", "java -jar -Dserver.port=8090 sentiment-analysis-web-0.0.1-SNAPSHOT.jar --sa.logic.api.url=${SA_LOGIC_API_URL}" ]
