@@ -6,6 +6,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper';
 import Polarity from "./components/Polarity";
 
+
 const style = {
     marginLeft: 12,
 };
